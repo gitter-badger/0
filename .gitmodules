@@ -1,0 +1,3 @@
+[submodule "lib/cjson"]
+	path = lib/cjson
+	url = git@github.com:LogicCores/cjson.git
