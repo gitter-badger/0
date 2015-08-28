@@ -1,6 +1,3 @@
-[submodule "lib/cjson"]
-	path = lib/cjson
-    url = git://github.com/LogicCores/cjson.git
 [submodule "cores/protocol"]
 	path = cores/protocol
 	url = git@github.com:LogicCores/0-protocol.git
@@ -28,12 +25,12 @@
 [submodule "cores/loop"]
 	path = cores/loop
 	url = git@github.com:LogicCores/0-loop.git
-[submodule "lib/bash.origin"]
-	path = lib/bash.origin
-	url = git@github.com:bash-origin/bash.origin.git
-[submodule "lib/sm.hoist.VisualComponents"]
-	path = lib/sm.hoist.VisualComponents
-	url = git@github.com:sourcemint/sm.hoist.VisualComponents.git
 [submodule "cores/skin"]
 	path = cores/skin
 	url = git@github.com:LogicCores/0-skin.git
+[submodule "/pinf.genesis/01-LogicCores/lib/bash.origin"]
+	path = /pinf.genesis/01-LogicCores/lib/bash.origin
+	url = git://github.com/LogicCores/cjson.git
+[submodule "/pinf.genesis/01-LogicCores/lib/sm.hoist.VisualComponents"]
+	path = /pinf.genesis/01-LogicCores/lib/sm.hoist.VisualComponents
+	url = git://github.com/sourcemint/sm.hoist.VisualComponents.git
