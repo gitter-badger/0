@@ -1,0 +1,8 @@
+{
+  "name": "Library",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "page": "^1.6.3"
+  }
+}

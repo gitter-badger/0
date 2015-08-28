@@ -1,0 +1,40 @@
+{
+    "@": "github.com/LogicCores/cjson/0.cjson",
+    "@responder": {
+        "@impl": "./cores/responder/0.json"
+    },
+    "@process": {
+        "$0-dev": {
+            "@responder": {
+                "$development": {
+                    "bind": "127.0.0.1",
+                    "port": 3010,
+                    "middleware": {
+                    },
+                    "routes": {
+                        "/": {
+                            "@impl": "@responder.static",
+                            "path": "{{__DIRNAME__}}/www/0"
+                        }
+                    }
+                }
+            }
+        },
+        "$0-preview": {
+            "@responder": {
+                "$preview": {
+                    "bind": "127.0.0.1",
+                    "port": 3011,
+                    "middleware": {
+                    },
+                    "routes": {
+                        "/": {
+                            "@impl": "@responder.static",
+                            "path": "{{__DIRNAME__}}/www/0"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

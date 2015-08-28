@@ -1,0 +1,8 @@
+{
+  "name": "Polyfills",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "html5-history-api": "^4.2.2"
+  }
+}
