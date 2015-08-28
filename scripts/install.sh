@@ -42,6 +42,18 @@ function init {
 
 	# TODO: Only install declared and used dependencies
 
+	pushd "$__BO_DIR__/../components/Library" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
+	pushd "$__BO_DIR__/../components/Polyfills" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
 	pushd "$__BO_DIR__/../cores/responder/for/express" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
