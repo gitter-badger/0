@@ -1,21 +1,21 @@
 [submodule "cores/protocol"]
 	path = cores/protocol
-	url = git@github.com:LogicCores/0-protocol.git
+url=git://github.com/LogicCores/0-protocol.git
 [submodule "cores/responder"]
 	path = cores/responder
-	url = git@github.com:LogicCores/0-responder.git
+url=git://github.com/LogicCores/0-responder.git
 [submodule "cores/time"]
 	path = cores/time
-	url = git@github.com:LogicCores/0-time.git
+url=git://github.com/LogicCores/0-time.git
 [submodule "cores/export"]
 	path = cores/export
-	url = git@github.com:LogicCores/0-export.git
+url=git://github.com/LogicCores/0-export.git
 [submodule "cores/container"]
 	path = cores/container
 url=git://github.com/LogicCores/0-container.git
 [submodule "cores/route"]
 	path = cores/route
-	url = git@github.com:LogicCores/0-route.git
+url=git://github.com/LogicCores/0-route.git
 [submodule "cores/data"]
 	path = cores/data
 	url = git@github.com:LogicCores/0-data.git
@@ -24,7 +24,13 @@ url=git://github.com/LogicCores/0-container.git
 	url = git@github.com:LogicCores/0-process.git
 [submodule "cores/loop"]
 	path = cores/loop
-	url = git@github.com:LogicCores/0-loop.git
+url=git://github.com/LogicCores/0-loop.git
 [submodule "cores/skin"]
 	path = cores/skin
-	url = git@github.com:LogicCores/0-skin.git
+url=git://github.com/LogicCores/0-skin.git
+[submodule "lib/cjson"]
+	path = lib/cjson
+	url = git@github.com:LogicCores/cjson.git
+[submodule "lib/bash.origin"]
+	path = lib/bash.origin
+	url = git@github.com:bash-origin/bash.origin.git
