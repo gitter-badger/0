@@ -4,6 +4,7 @@
 	"main": "server.js",
 	"scripts": {
 		"install": "scripts/install.sh",
+		"test": "scripts/test.sh",
 		"edit": "scripts/edit.sh",
 		"dev": "scripts/dev.sh",
 		"start": "node server.js"
