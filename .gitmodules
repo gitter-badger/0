@@ -12,7 +12,7 @@
 	url = git@github.com:LogicCores/0-export.git
 [submodule "cores/container"]
 	path = cores/container
-	url = git@github.com:LogicCores/0-container.git
+url=git://github.com/LogicCores/0-container.git
 [submodule "cores/route"]
 	path = cores/route
 	url = git@github.com:LogicCores/0-route.git
