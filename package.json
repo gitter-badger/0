@@ -6,6 +6,6 @@
 		"_disabled_install": "lib/bash.origin/bash.origin BO install; scripts/install.sh",
 		"edit": "scripts/edit.sh",
 		"dev": "scripts/dev.sh",
-		"start": "server.js"
+		"start": "node server.js"
 	}
 }
