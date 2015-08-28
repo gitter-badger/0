@@ -1,0 +1,11 @@
+{
+	"name": "0",
+	"version": "0.0.0",
+	"main": "server.js",
+	"scripts": {
+		"_disabled_install": "lib/bash.origin/bash.origin BO install; scripts/install.sh",
+		"edit": "scripts/edit.sh",
+		"dev": "scripts/dev.sh",
+		"start": "server.js"
+	}
+}
