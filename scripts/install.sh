@@ -11,8 +11,12 @@ WORKSPACE_DIR="$PWD"
 
 
 pushd "$WORKSPACE_DIR" > /dev/null
+
+ls -al
+
 	if [ -f ".gitmodules" ]; then
 		if [ ! -f ".gitmodules.initialized" ]; then
+			echo "Init submodules ..."
 			git submodule update --init --recursive --rebase
 			touch ".gitmodules.initialized"
 		fi
