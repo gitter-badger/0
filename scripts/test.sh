@@ -16,6 +16,7 @@ function init {
 
 echo "Running ..."
 
+
 		BO_log "$VERBOSE" "FOOTER"
 	}
 
