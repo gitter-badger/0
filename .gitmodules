@@ -1,6 +1,6 @@
 [submodule "lib/cjson"]
 	path = lib/cjson
-	url = git@github.com:LogicCores/cjson.git
+url=https://github.com/LogicCores/cjson.git
 [submodule "cores/protocol"]
 	path = cores/protocol
 	url = git@github.com:LogicCores/0-protocol.git
