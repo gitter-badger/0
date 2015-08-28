@@ -3,6 +3,15 @@ if [ -z "$HOME" ]; then
 	echo "ERROR: 'HOME' environment variable is not set!"
 	exit 1
 fi
+
+echo "dir"
+
+pwd
+
+#lib/bash.origin/bash.origin BO install; 
+
+exit 1
+
 # Source https://github.com/bash-origin/bash.origin
 . "$HOME/.bash.origin"
 function init {
@@ -12,9 +21,22 @@ function init {
 
 	BO_log "$VERBOSE" "HEADER" "Installing 0 ..."
 
-	BO_ensure_nvm
-	nvm install 0.12
-	nvm use 0.12
+	pushd "$__BO_DIR__/.." > /dev/null
+		if [ -f ".gitmodules" ]; then
+			if [ ! -f ".gitmodules.initialized" ]; then
+				BO_log "$VERBOSE" "Init submodules ..."
+				git submodule update --init --recursive --rebase
+				BO_log "$VERBOSE" "... submodules init done"
+				touch ".gitmodules.initialized"
+			else
+				BO_log "$VERBOSE" "Skip init submodules. Already initialized."
+			fi
+		fi
+	popd > /dev/null
+
+#	BO_ensure_nvm
+#	nvm install 0.12
+#	nvm use 0.12
 
 	# TODO: Only install declared and used dependencies
 

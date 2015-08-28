@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"main": "server.js",
 	"scripts": {
-		"install": "lib/bash.origin/bash.origin BO install; scripts/install.sh",
+		"install": "scripts/install.sh",
 		"edit": "scripts/edit.sh",
 		"dev": "scripts/dev.sh",
 		"start": "node server.js"
