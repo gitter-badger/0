@@ -28,9 +28,3 @@
 [submodule "cores/skin"]
 	path = cores/skin
 	url = git@github.com:LogicCores/0-skin.git
-[submodule "/pinf.genesis/01-LogicCores/lib/bash.origin"]
-	path = /pinf.genesis/01-LogicCores/lib/bash.origin
-	url = git://github.com/LogicCores/cjson.git
-[submodule "/pinf.genesis/01-LogicCores/lib/sm.hoist.VisualComponents"]
-	path = /pinf.genesis/01-LogicCores/lib/sm.hoist.VisualComponents
-	url = git://github.com/sourcemint/sm.hoist.VisualComponents.git
