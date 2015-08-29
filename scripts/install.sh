@@ -81,6 +81,12 @@ function init {
        	fi
 	popd > /dev/null
 
+	pushd "$__BO_DIR__/../cores/page/for/page" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
 	BO_log "$VERBOSE" "FOOTER"
 }
 init $@
