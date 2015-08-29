@@ -7,6 +7,10 @@ An opinionated minimal primitive-component-based development and runtime system 
 
 > Create stable static assets for deployment from your dynamic source logic.
 
+[http://zerosystem.io/](http://zerosystem.io/)
+
+[![Build Status](https://travis-ci.org/LogicCores/0.svg)](https://travis-ci.org/LogicCores/0)
+
 
 Setup
 -----
