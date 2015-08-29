@@ -23,8 +23,8 @@ Setup
 ### Optional
 
   * Heroku
+  * TravisCI
   * DNSimple
-  * CloudFlare
 
 
 Evaluate
