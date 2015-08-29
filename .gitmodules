@@ -34,3 +34,6 @@ url=git://github.com/LogicCores/cjson.git
 [submodule "lib/bash.origin"]
 	path = lib/bash.origin
 url=git://github.com/bash-origin/bash.origin.git
+[submodule "cores/page"]
+	path = cores/page
+	url = git://github.com/LogicCores/0-page.git

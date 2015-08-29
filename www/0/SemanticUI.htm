@@ -51,6 +51,27 @@
   .overlay.fixed .menu {
     left: 800px;
   }
+  
+  .borderless.main.menu {
+    margin-top: 0px;
+  }
+
+  .borderless.main.menu .item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .main.text.container {
+    margin-bottom: 20px;
+  }
+  .main.header {
+    margin-top: 0px;
+  }
+  
+  .text.container.tab {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
 
   .text.container .left.floated.image {
     margin: 2em 2em 2em -4em;
@@ -59,13 +80,35 @@
     margin: 2em -4em 2em 2em;
   }
 
-  .ui.footer.segment {
+  .vertical.footer.segment .section.divider {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .vertical.footer.segment {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+
+  .footer.segment {
     margin: 5em 0em 0em;
     padding: 5em 0em;
   }
   
   .justify.text {
     text-align: justify;
+  }
+  
+  .footer .license {
+    max-width: 500px !important;
+    text-align: justify !important;
+  }
+  
+  .definition.popup {
+    font-weight: bold;
+    cursor: help;
+    border-bottom: 1px dotted;
+    padding-left: 3px;
+    padding-right: 3px;
   }
   </style>
 
@@ -74,35 +117,46 @@
       
   <div class="ui main text container">
 
- <a class="ui red right ribbon label">
-    ALPHA: Under Heavy Development
-  </a>
-    <h1 class="ui header">
-      <img class="ui image" src="/img/0.png">
+    <a class="ui red right ribbon label">
+      ALPHA: Under Heavy Development
+    </a>
+    <h1 class="ui main header">
+      <img class="ui image" src="/img/0.png"/>
       <div class="content">
         Zero System
-        <div class="sub header"><a href="http://zerosystem.io">zerosystem.io</a></div>
+        <div class="sub header">
+          <a href="http://zerosystem.io">zerosystem.io</a>
+          &nbsp;
+          <a href="https://github.com/LogicCores/0">
+            <i class="github icon"></i>github.com/LogicCores/0
+          </a>
+        </div>
       </div>
     </h1>
     <h3 class="ui header">a Declarative System Composition Template</h3>
 
     <p>Systems rot because they cannot be refactored and developers waste time because they cannot easily upgrade nor swap out components. We aim to <b>put an end to this waste!</b></p>
 
-    <p><b>Zero System</b> is made for <b>NodeJS</b> and used to build <b>Distributed JavaScript Applications</b></h1>
+    <p><b>Zero System</b> is made for <b>NodeJS</b> and used to build <b>Distributed JavaScript Applications</b>
+
+    <p>
+      <a href="https://travis-ci.org/LogicCores/0"><img src="https://travis-ci.org/LogicCores/0.svg"/></a>
+    </p>
   </div>
 
   <div class="ui borderless main menu">
     <div class="ui text container">
       <div href="#" class="header item">
-        <img class="logo" src="/img/0.png">
+        <img class="logo" src="/img/0.png"/>
       </div>
-      <a href="#" class="item" data-tab="introduction">Introduction</a>
-      <a href="#" class="item" data-tab="install">Examples</a>
-      <a href="#" class="item" data-tab="install">Install</a>
+      <a href="/SemanticUI/Introduction" class="item" data-tab="introduction">Introduction</a>
+      <a href="/SemanticUI/Examples" class="item" data-tab="examples">Examples</a>
+      <a href="/SemanticUI/Install" class="item" data-tab="install">Install</a>
 
       <div class="right menu">
-        <a href="#" class="item" data-tab="learn">Learn</a>
-        <a href="#" class="item" data-tab="api">API</a>
+        <a href="/SemanticUI/Learn" class="item" data-tab="learn">Learn</a>
+        <a href="/SemanticUI/Cores" class="item" data-tab="cores">Cores</a>
+        <a href="/SemanticUI/APIs" class="item" data-tab="api">APIs</a>
       </div>
     </div>
   </div>
@@ -111,8 +165,50 @@
 
 Intro
 
+<br/>
+<br/>
+<br/>
+<br/>
+...
+<br/>
+<br/>
+<br/>
+<br/>
+...
+<br/>
+<br/>
+<br/>
+<br/>
+...
+<br/>
+<br/>
+<br/>
+<br/>
+...
+<br/>
+<br/>
+<br/>
+<br/>
+...
+<br/>
+<br/>
+<br/>
+<br/>
+...
+<br/>
+<br/>
+<br/>
+<br/>
+...
+
   </div>
     
+  <div class="ui text container tab" data-tab="examples">
+
+Examples
+
+  </div>
+
   <div class="ui text container tab" data-tab="install">
 
 Install
@@ -121,47 +217,146 @@ Install
 
   <div class="ui text container tab" data-tab="learn">
 
-Learn
+<h1 class="ui header">First header</h1>
+
+<h2 class="ui header">Second header</h2>
+
+
+  </div>
+
+  <div class="ui text container tab" data-tab="cores">
+
 
   </div>
 
   <div class="ui text container tab" data-tab="api">
 
-API
+
+    <h1 class="ui dividing header">Scope: Common</h1>
+
+    <p>[TODO: Pull in minimal source files that act as docs]</p>
+
+    <p><code>"use strict"; // ECMAScript 6</code></code></p>
+    <p><code>var Promise = require("Promise");</code></p>
+    <p><code>var document = require("document");</code></p>
+    <p><code>var time = require("0/time");</code></p>
+
+
+    <h1 class="ui dividing header">Scope: UI</h1>
+
+    <h2 class="ui header">Ployfills</h2>
+    
+    <p>UI APIs work on the following browsers:</p>
+
+    <p>[Saucelab Results]</p>
+
+    <h2 class="ui header">Library / UI</h2>
+
+
+    <h2 class="ui header">App</h2>
+
+    <h3 class="ui header">HTML</h3>
+
+      <p><code>var document = require("document");</code></p>
+      <p><code>var document = require("document");</code></p>
+
+
+    <h1 class="ui dividing header">Scope: Service</h1>
+
+    <h2 class="ui header">Library / Service</h2>
+
+    <h2 class="ui header">App</h2>
+
 
   </div>
 
   <div class="ui inverted vertical footer segment">
     <div class="ui center aligned container">
-      <div class="ui stackable inverted divided grid">
+      <div class="ui stackable inverted grid">
         <div class="eight wide column">
           <div class="ui inverted link list">
-            <a href="https://github.com/LogicCores" class="item">
-              <i class="github icon"></i>github.com/LogicCores
+            <a href="https://twitter.com/OpenZeroSystem" class="item">
+              <i class="twitter icon"></i> &nbsp;
+              @OpenZeroSystem
+            </a>
+            <a href="http://ZeroSystem.io" class="item">
+              <i class="home icon"></i> &nbsp;
+              ZeroSystem.io
+            </a>
+            <a href="https://github.com/LogicCores/0" class="item">
+              <i class="github icon"></i> &nbsp;
+              github.com/LogicCores/0
             </a>
             <a href="http://ChristophDorn.com" class="item">
-              <i class="anchor icon"></i>ChristophDorn.com
+              <i class="anchor icon"></i> &nbsp;
+              ChristophDorn.com
             </a>
           </div>
+          
+          <br/>
+          <br/>
+          <p>Logic + Love + Creative Energy => Better Future</p>
+          
         </div>
         <div class="eight wide column">
-          <h4 class="ui inverted header">Why the Logic Cores project?</h4>
+          <h4 class="ui inverted header">Why the Zero System project?</h4>
           <p class="justify text">I <a href="http://christophdorn.com">Christoph Dorn</a> have been continuously searchig for the ultimate development environment and system. <b>Zero System</b> is my attempt to bring <i>declarative based system composition</i> to </i>NodeJS and JavaScript</i> application development. I believe we must start <i>declaring</i> how we wish to compose our applications (which are really systems) rather than <i>code</i> them. Declarative composition seems to be the underpinning of component-based development and demands more attention.</p>
         </div>
       </div>
       <div class="ui inverted section divider"></div>
       <div class="ui horizontal inverted small divided link list">
-          Original <b>Source Logic</b> <a href="http://unlicense.org">UNLICENSED</a> by <a href="http://christophdorn.com">Christoph Dorn</a>
+          Original <span class="definition popup" data-content="Source Logic encompasses all the original logic in substance or arrangement in the form of encoded decisions that are recorded in system and human readable languages unique to a specific work from a specific context. It is recognized that new discoveries occur in all contexts a person may find themselves in and that diverse contexts are paramount in driving usefulness that leads to insights for new solutions. Thus Source Logic is a function of context diversity and usefulness implementation focus and can be used to describe all work an individual uniquely contribues to a global body of work. You define usefulness for yourself based on your imagination." data-variation="basic">Source Logic</span> by <a href="http://christophdorn.com">Christoph Dorn</a>
       </div>
     </div>
   </div>
 
+  <div class="ui vertical footer segment">
+    <div class="ui center aligned container license">
 
-  <script src="/cores/export/for/browserify/polyfills.js"></script>
-  <script src="/cores/skin/for/semantic-ui/node_modules/jquery/dist/jquery.js"></script>
-  <script src="/cores/skin/for/semantic-ui/semantic.js"></script>
+<p>This is free and unencumbered software released into the public domain.</p>
 
-  <script src="/cores/export/for/browserify/lib.js"></script>
+<p>Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.</p>
+
+<p>In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.</p>
+
+<p>For more information, please refer to <a href="http://unlicense.org/">http://unlicense.org/</a></p>
+    
+    </div>
+    
+    <br/>
+    <br/>
+
+    <div class="ui center aligned container">
+      <a class="positive ui button" href="https://github.com/LogicCores/0">Clone Zero System and use it as a Template for your next Application</a>
+      
+      <br/>
+      <br/>
+      <p><b>Nothing is set in stone</b> &nbsp; That's the beauty of <a href="https://git-scm.com/">git</a> and <a href="http://opensource.org/">Open Source</a>! &nbsp; <a href="https://github.com/LogicCores/0/pulls">Send your contributions</a></p>
+    </div>
+
+  </div>
+
+
+  <script src="/cores/export/for/browserify/polyfills.dist.js"></script>
+  <script src="/cores/export/for/browserify/cores.js"></script>
+  <script src="/cores/export/for/browserify/lib.dist.js"></script>
   <script src="/cores/export/for/browserify/app.js"></script>
 
   <script>
@@ -188,8 +383,12 @@ API
       $('.main.menu  .ui.dropdown').dropdown({
         on: 'hover'
       });
-      
+
       $('.menu .item').tab();
+
+      $('.definition.popup').popup({
+        inline: true
+      });
     });
   </script>
 </body>
