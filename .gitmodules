@@ -37,3 +37,6 @@ url=git://github.com/bash-origin/bash.origin.git
 [submodule "cores/page"]
 	path = cores/page
 	url = git://github.com/LogicCores/0-page.git
+[submodule "lib/sm.hoist.VisualComponents"]
+	path = lib/sm.hoist.VisualComponents
+	url = git://github.com/sourcemint/sm.hoist.VisualComponents.git
