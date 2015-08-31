@@ -1,2 +1,2 @@
 
-window.Library = require("../../components/Library");
+window.Library = require("../../components/Library/0");

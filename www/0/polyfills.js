@@ -1,2 +1,2 @@
 
-require("../../components/Polyfills");
+require("../../components/Polyfills/0");

@@ -39,13 +39,13 @@ function init {
 
 	# TODO: Only install declared and used dependencies
 
-	pushd "$__BO_DIR__/../components/Library" > /dev/null
+	pushd "$__BO_DIR__/../components/Library/0" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
        	fi
 	popd > /dev/null
 
-	pushd "$__BO_DIR__/../components/Polyfills" > /dev/null
+	pushd "$__BO_DIR__/../components/Polyfills/0" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
        	fi

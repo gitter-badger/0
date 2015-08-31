@@ -13,7 +13,7 @@ waitForLibrary(function () {
 	
 	function initPageManagement () {
 
-		var page = window.Cores.page.spin({});
+		var page = window.Cores.page.adapters.page.spin({});
 	
 		page.on("changed:path", function (path) {
 			$('.menu .item[href="' + path + '"]').each(function () {
@@ -33,7 +33,7 @@ waitForLibrary(function () {
 
 	function initComponents () {
 		
-		window.Cores.load.loaders.pinf.load(
+		window.Cores.load.adapters.pinf.load(
 			"/dist/DependencyVisualization.bundle.js"
 		).then(function (container) {
 
@@ -43,7 +43,7 @@ waitForLibrary(function () {
 			console.log("ERROR loading components using pinf loader:", err.stack);
 		});
 
-		window.Cores.load.loaders.requirejs.load(
+		window.Cores.load.adapters.requirejs.load(
 			"/dist/DependencyVisualization.amd.js"
 		).then(function (container) {
 
@@ -54,7 +54,7 @@ waitForLibrary(function () {
 		});
 
 /*
-		window.Cores.load.loaders.systemjs.load(
+		window.Cores.load.adapters.systemjs.load(
 			"/dist/DependencyVisualization.amd.js"
 		).then(function (container) {
 

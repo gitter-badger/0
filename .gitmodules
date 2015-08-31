@@ -61,3 +61,12 @@ url=git://github.com/bash-origin/bash.origin.git
 [submodule "cores/test"]
 	path = cores/test
 	url = git://github.com/LogicCores/0-test.git
+[submodule "cores/component"]
+	path = cores/component
+	url = git://github.com/LogicCores/0-component.git
+[submodule "cores/template"]
+	path = cores/template
+	url = git://github.com/LogicCores/0-template.git
+[submodule "cores/layout"]
+	path = cores/layout
+	url = git://github.com/LogicCores/0-layout.git
