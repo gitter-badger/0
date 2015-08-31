@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html>
+<html component:id="html">
 <head>
   <!-- Standard Meta -->
   <meta charset="utf-8" />
@@ -156,125 +155,18 @@
       <div href="#" class="header item">
         <img class="logo" src="/img/0.png"/>
       </div>
-      <a href="/SemanticUI/Introduction" class="item" data-tab="introduction">Introduction</a>
-      <a href="/SemanticUI/Examples" class="item" data-tab="examples">Examples</a>
-      <a href="/SemanticUI/Install" class="item" data-tab="install">Install</a>
-
+      <a href="/SemanticUI/Introduction" class="item" component:action:target="anchor:page-content" component:action:active:class="active">Introduction</a>
+      <a href="/SemanticUI/Examples" class="item" component:action:target="anchor:page-content" component:action:active:class="active">Examples</a>
+      <a href="/SemanticUI/Install" class="item" component:action:target="anchor:page-content" component:action:active:class="active">Install</a>
       <div class="right menu">
-        <a href="/SemanticUI/Learn" class="item" data-tab="learn">Learn</a>
-        <a href="/SemanticUI/Cores" class="item" data-tab="cores">Cores</a>
-        <a href="/SemanticUI/APIs" class="item" data-tab="api">APIs</a>
+        <a href="/SemanticUI/Learn" class="item" component:action:target="anchor:page-content" component:action:active:class="active">Learn</a>
+        <a href="/SemanticUI/Cores" class="item" component:action:target="anchor:page-content" component:action:active:class="active">Cores</a>
+        <a href="/SemanticUI/APIs" class="item" component:action:target="anchor:page-content" component:action:active:class="active">APIs</a>
       </div>
     </div>
   </div>
 
-  <div class="ui text container tab" data-tab="introduction">
-
-Intro
-
-<br/>
-<br/>
-<br/>
-<br/>
-...
-<br/>
-<br/>
-<br/>
-<br/>
-...
-<br/>
-<br/>
-<br/>
-<br/>
-...
-<br/>
-<br/>
-<br/>
-<br/>
-...
-<br/>
-<br/>
-<br/>
-<br/>
-...
-<br/>
-<br/>
-<br/>
-<br/>
-...
-<br/>
-<br/>
-<br/>
-<br/>
-...
-
-  </div>
-    
-  <div class="ui text container tab" data-tab="examples">
-
-Examples
-
-  </div>
-
-  <div class="ui text container tab" data-tab="install">
-
-Install
-
-  </div>
-
-  <div class="ui text container tab" data-tab="learn">
-
-<h1 class="ui header">First header</h1>
-
-<h2 class="ui header">Second header</h2>
-
-
-  </div>
-
-  <div class="ui text container tab" data-tab="cores">
-
-
-  </div>
-
-  <div class="ui text container tab" data-tab="api">
-
-
-    <h1 class="ui dividing header">Scope: Common</h1>
-
-    <p>[TODO: Pull in minimal source files that act as docs]</p>
-
-    <p><code>"use strict"; // ECMAScript 6</code></code></p>
-    <p><code>var Promise = require("Promise");</code></p>
-    <p><code>var document = require("document");</code></p>
-    <p><code>var time = require("0/time");</code></p>
-
-
-    <h1 class="ui dividing header">Scope: UI</h1>
-
-    <h2 class="ui header">Ployfills</h2>
-    
-    <p>UI APIs work on the following browsers:</p>
-
-    <p>[Saucelab Results]</p>
-
-    <h2 class="ui header">Library / UI</h2>
-
-
-    <h2 class="ui header">App</h2>
-
-    <h3 class="ui header">HTML</h3>
-
-      <p><code>var document = require("document");</code></p>
-      <p><code>var document = require("document");</code></p>
-
-
-    <h1 class="ui dividing header">Scope: Service</h1>
-
-    <h2 class="ui header">Library / Service</h2>
-
-    <h2 class="ui header">App</h2>
-
-
+  <div class="ui text container" component:anchor:id="page-content">
   </div>
 
   <div class="ui inverted vertical footer segment">

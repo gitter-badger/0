@@ -13,12 +13,15 @@ waitForLibrary(function () {
 	
 	function initPageManagement () {
 
-		var page = window.Cores.page.adapters.page.spin({});
+		var pageContext = new window.Cores.page.Context();
+
+		var page = window.Cores.page.adapters.page.spin(pageContext);
+		var firewidgets = window.Cores.page.adapters.firewidgets.spin(pageContext);
 	
-		page.on("changed:path", function (path) {
+		pageContext.on("changed:path", function (path) {
 			$('.menu .item[href="' + path + '"]').each(function () {
 				var item = $(this);
-				item.tab('change tab', item.attr("data-tab"));
+//				item.tab('change tab', item.attr("data-tab"));
 			});
 		});
 		
