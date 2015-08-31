@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bluebird": "^2.9.34",
+    "es6-module-loader": "^0.17.6",
     "html5-history-api": "^4.2.2",
     "html5shiv": "^3.7.3"
   }

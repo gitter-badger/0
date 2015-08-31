@@ -57,6 +57,12 @@ function init {
        	fi
 	popd > /dev/null
 
+	pushd "$__BO_DIR__/../cores/proxy/for/smi.cache" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
 	pushd "$__BO_DIR__/../cores/skin/for/semantic-ui" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
@@ -82,6 +88,30 @@ function init {
 	popd > /dev/null
 
 	pushd "$__BO_DIR__/../cores/page/for/page" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
+	pushd "$__BO_DIR__/../cores/load/for/systemjs" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
+	pushd "$__BO_DIR__/../cores/load/for/requirejs" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
+	pushd "$__BO_DIR__/../lib/smi.cache" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
+	pushd "$__BO_DIR__/../lib/sm.hoist.VisualComponents" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
        	fi

@@ -107,8 +107,6 @@
     font-weight: bold;
     cursor: help;
     border-bottom: 1px dotted;
-    padding-left: 3px;
-    padding-right: 3px;
   }
   </style>
 
@@ -127,9 +125,18 @@
         <div class="sub header">
           <a href="http://zerosystem.io">zerosystem.io</a>
           &nbsp;
+          &nbsp;
           <a href="https://github.com/LogicCores/0">
             <i class="github icon"></i>github.com/LogicCores/0
           </a>
+          &nbsp;
+          &nbsp;
+          <a href="https://twitter.com/OpenZeroSystem" class="item">
+            <i class="twitter icon"></i>@OpenZeroSystem
+          </a>
+        </div>
+        <div class="sub header">
+            <code>git clone https://github.com/LogicCores/0.git</code>
         </div>
       </div>
     </h1>
@@ -140,11 +147,11 @@
     <p><b>Zero System</b> is made for <b>NodeJS</b> and used to build <b>Distributed JavaScript Applications</b>
 
     <p>
-      <a href="https://travis-ci.org/LogicCores/0"><img src="https://travis-ci.org/LogicCores/0.svg"/></a>
+      <a href="https://travis-ci.org/LogicCores/0"><img src="/cores/proxy/for/smi.cache/travis-ci.org/LogicCores/0.svg"/></a>
     </p>
   </div>
 
-  <div class="ui borderless main menu">
+  <div class="ui borderless main menu" component:id="navbar">
     <div class="ui text container">
       <div href="#" class="header item">
         <img class="logo" src="/img/0.png"/>
@@ -295,7 +302,7 @@ Install
           
           <br/>
           <br/>
-          <p>Logic + Love + Creative Energy => Brighter Future</p>
+          <p>Logic &nbsp; + &nbsp; Love &nbsp; + &nbsp; Creative Energy &nbsp; ~> &nbsp; Brighter Future</p>
           
         </div>
         <div class="eight wide column">
@@ -354,9 +361,15 @@ OTHER DEALINGS IN THE SOFTWARE.</p>
   </div>
 
 
+  <script>
+//  if (typeof self === "undefined") {
+//console.log("SET SELF");
+//    var self = window;
+//  }
+  </script>
   <script src="/cores/export/for/browserify/polyfills.dist.js"></script>
-  <script src="/cores/export/for/browserify/cores.js"></script>
   <script src="/cores/export/for/browserify/lib.dist.js"></script>
+  <script src="/cores/export/for/browserify/cores.js"></script>
   <script src="/cores/export/for/browserify/app.js"></script>
 
   <script>

@@ -30,6 +30,43 @@ waitForLibrary(function () {
 		});
 	}
 
+
+	function initComponents () {
+		
+		window.Cores.load.loaders.pinf.load(
+			"/dist/DependencyVisualization.bundle.js"
+		).then(function (container) {
+
+			container.main();
+
+		}).catch(function (err) {
+			console.log("ERROR loading components using pinf loader:", err.stack);
+		});
+
+		window.Cores.load.loaders.requirejs.load(
+			"/dist/DependencyVisualization.amd.js"
+		).then(function (container) {
+
+			container.main();
+
+		}).catch(function (err) {
+			console.log("ERROR loading components using requirejs loader:", err.stack);
+		});
+
+/*
+		window.Cores.load.loaders.systemjs.load(
+			"/dist/DependencyVisualization.amd.js"
+		).then(function (container) {
+
+			container.main();
+
+		}).catch(function (err) {
+			console.log("ERROR loading components using systemjs loader:", err.stack);
+		});
+*/
+	}
+
 	initPageManagement();
+	initComponents();
 
 });

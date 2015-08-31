@@ -40,3 +40,24 @@ url=git://github.com/bash-origin/bash.origin.git
 [submodule "lib/sm.hoist.VisualComponents"]
 	path = lib/sm.hoist.VisualComponents
 	url = git://github.com/sourcemint/sm.hoist.VisualComponents.git
+[submodule "cores/proxy"]
+	path = cores/proxy
+	url = git://github.com/LogicCores/0-proxy.git
+[submodule "lib/smi.cache"]
+	path = lib/smi.cache
+	url = git://github.com/sourcemint/smi.cache.git
+[submodule "lib/pinf-loader-js"]
+	path = lib/pinf-loader-js
+	url = git://github.com/pinf/pinf-loader-js.git
+[submodule "cores/load"]
+	path = cores/load
+	url = git://github.com/LogicCores/0-load.git
+[submodule "cores/watch"]
+	path = cores/watch
+	url = git@github.com:LogicCores/0-watch.git
+[submodule "cores/edit"]
+	path = cores/edit
+	url = git://github.com/LogicCores/0-edit.git
+[submodule "cores/test"]
+	path = cores/test
+	url = git://github.com/LogicCores/0-test.git

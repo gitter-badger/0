@@ -1,0 +1,19 @@
+{
+    "config": {
+	    "sm.hoist.visualcomponents/0": {
+	    	"source": {
+	    		"server": {
+	    			"host": "localhost:{{env.PORT}}"
+	    		}
+	    	},
+	    	"pages": {
+	    		"index": {
+	    			"source": "/index.html"
+    			}
+	    	},
+	    	"target": {
+	    		"path": "{{__DIRNAME__}}/../../../cache/0/skin/components"
+	    	}
+	    }
+	}
+}
