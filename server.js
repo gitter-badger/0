@@ -1,4 +1,4 @@
 
 
-require("./cores/responder/for/express/server.js");
+require("./cores/responder/0-server.api").adapters.express.main();
 
