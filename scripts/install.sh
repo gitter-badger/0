@@ -87,7 +87,19 @@ function init {
        	fi
 	popd > /dev/null
 
+	pushd "$__BO_DIR__/../cores/export/for/webpack" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
 	pushd "$__BO_DIR__/../cores/page/for/page" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
+	pushd "$__BO_DIR__/../cores/page/for/firewidgets" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
        	fi
@@ -100,6 +112,12 @@ function init {
 	popd > /dev/null
 
 	pushd "$__BO_DIR__/../cores/load/for/requirejs" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
+	pushd "$__BO_DIR__/../cores/transform/for/marked" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
        	fi

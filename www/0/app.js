@@ -10,32 +10,47 @@ function waitForLibrary (whenLoaded) {
 
 
 waitForLibrary(function () {
-	
+
 	function initPageManagement () {
 
 		var pageContext = new window.Cores.page.Context();
 
 		var page = window.Cores.page.adapters.page.spin(pageContext);
-		var firewidgets = window.Cores.page.adapters.firewidgets.spin(pageContext);
-	
+
+		var firewidgets = window.Cores.page.adapters.firewidgets.spin(window._.extend(pageContext, {
+			anchors: {
+				"page-content": function (context) {
+
+					var uri = "/cores/transform/for/marked/Pages/" + context.getPath().replace(/^\/SemanticUI\//, "") + ".md.htm";
+
+					return window.fetch(uri).then(function(response) {
+						return response.text();
+					}).then(function (html) {
+						return {
+							html: html || ""
+						};
+					});
+				}
+			}
+		}));
+
 		pageContext.on("changed:path", function (path) {
-			$('.menu .item[href="' + path + '"]').each(function () {
-				var item = $(this);
-//				item.tab('change tab', item.attr("data-tab"));
-			});
-		});
-		
-		$(function () {
-			$('.menu .item[href]').click(function () {
-				page.navigateTo($(this).attr("href"));
-				return false;
-			});
+			// TODO: Optionally remember scoll positions of pages and re-apply on nav.
+			var navElm = $('.placeholder[data-component-id="navbar"]');
+			var navY = navElm.offset().top;
+			var docY = $(document).scrollTop();
+			if (docY > navY) {
+				$(document).scrollTop(navY + 1);
+			}
 		});
 	}
 
 
 	function initComponents () {
-		
+
+		console.log("init components");
+
+/*		
 		window.Cores.load.adapters.pinf.load(
 			"/dist/DependencyVisualization.bundle.js"
 		).then(function (container) {
@@ -55,6 +70,7 @@ waitForLibrary(function () {
 		}).catch(function (err) {
 			console.log("ERROR loading components using requirejs loader:", err.stack);
 		});
+*/
 
 /*
 		window.Cores.load.adapters.systemjs.load(

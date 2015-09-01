@@ -73,3 +73,21 @@ url=git://github.com/bash-origin/bash.origin.git
 [submodule "cores/namespace"]
 	path = cores/namespace
 	url = git@github.com:LogicCores/0-namespace.git
+[submodule "cores/transform"]
+	path = cores/transform
+	url = git://github.com/LogicCores/0-transform.git
+[submodule "cores/config"]
+	path = cores/config
+	url = git@github.com:LogicCores/0-config.git
+[submodule "cores/render"]
+	path = cores/render
+	url = git@github.com:LogicCores/0-render.git
+[submodule "cores/email"]
+	path = cores/email
+	url = git@github.com:LogicCores/0-email.git
+[submodule "cores/sms"]
+	path = cores/sms
+	url = git://github.com/LogicCores/0-sms.git
+[submodule "cores/console"]
+	path = cores/console
+	url = git@github.com:LogicCores/0-console.git

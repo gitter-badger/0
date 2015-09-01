@@ -13,6 +13,9 @@
 	    	},
 	    	"target": {
 	    		"path": "{{__DIRNAME__}}/../../../cache/0/skin/components"
+	    	},
+	    	"resources": {
+	    		"import": false
 	    	}
 	    }
 	}
