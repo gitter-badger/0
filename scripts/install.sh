@@ -39,13 +39,17 @@ function init {
 
 	# TODO: Only install declared and used dependencies
 
-	pushd "$__BO_DIR__/../components/Library/0" > /dev/null
+	pushd "$__BO_DIR__/../components/Library.Window/0" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
+			pushd "node_modules/node-forge" > /dev/null
+	        	npm install
+	        	npm run minify
+			popd > /dev/null
        	fi
 	popd > /dev/null
 
-	pushd "$__BO_DIR__/../components/Polyfills/0" > /dev/null
+	pushd "$__BO_DIR__/../components/Polyfills.Window/0" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
        	fi

@@ -91,3 +91,9 @@ url=git://github.com/bash-origin/bash.origin.git
 [submodule "cores/console"]
 	path = cores/console
 	url = git@github.com:LogicCores/0-console.git
+[submodule "cores/auth"]
+	path = cores/auth
+	url = git@github.com:LogicCores/0-auth.git
+[submodule "data/0/ZeroSystemBook"]
+	path = data/0/ZeroSystemBook
+	url = git@github.com:LogicCores/ZeroSystemBook.git

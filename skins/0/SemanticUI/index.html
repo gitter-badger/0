@@ -13,7 +13,25 @@
 
 </head>
 <body>
-      
+
+
+
+  <div id="community-menu" class="ui borderless menu" component:view="loggedin">
+    <div class="ui text container">
+      <div href="#" class="header item">
+        <img class="logo" src="/img/0-community.png"/> &nbsp; Zero Community
+      </div>
+      <div class="item">
+        <a href="/SemanticUI/Community/Clones" component:action:target="anchor:page-content" component:action:active:class="active" class="ui inverted green button">There are <strong>11</strong> Clones</a>
+      </div>
+      <div class="right menu">
+        <a href="/SemanticUI/Community/About" class="item" component:action:target="anchor:page-content" component:action:active:class="active">About</a>
+        <a href="#" class="item" component:action:target="action:logout">Logout</a>
+      </div>
+    </div>
+  </div>
+
+
   <div class="ui main text container">
 
     <a class="ui red right ribbon label">
@@ -47,6 +65,10 @@
 
     <p><b>Zero System</b> is made for <b>NodeJS</b> and used to build <b>Distributed JavaScript Applications</b>
 
+    <div class="ui center aligned basic segment" component:view="login">
+      <button class="ui secondary button" component:action:target="action:login"><i class="github icon"></i> Login to Zero System Community</button>
+    </div>
+
     <p>
       <a href="https://travis-ci.org/LogicCores/0"><img src="/cores/proxy/for/smi.cache/travis-ci.org/LogicCores/0.svg"/></a>
     </p>
@@ -68,7 +90,7 @@
     </div>
   </div>
 
-  <div class="ui text container page" component:anchor:id="page-content">
+  <div id="page-content" class="ui text container page" component:anchor:id="page-content">
   </div>
 
   <div class="ui inverted vertical footer segment">
@@ -165,7 +187,8 @@ OTHER DEALINGS IN THE SOFTWARE.</p>
 
       // fix main menu to page on passing
       $('.main.menu').visibility({
-        type: 'fixed'
+        type: 'fixed',
+        offset : 48
       });
       $('.overlay').visibility({
         type: 'fixed',
@@ -179,16 +202,12 @@ OTHER DEALINGS IN THE SOFTWARE.</p>
         duration: 500
       });
 
-      // show dropdown on hover
-      $('.main.menu  .ui.dropdown').dropdown({
-        on: 'hover'
-      });
-
       $('.menu .item').tab();
 
       $('.definition.popup').popup({
         inline: true
       });
+      
     });
   </script>
 </body>

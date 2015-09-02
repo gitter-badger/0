@@ -11,11 +11,43 @@ function waitForLibrary (whenLoaded) {
 
 waitForLibrary(function () {
 
+	var authContext = new window.Cores.auth.Context();
+	var pageContext = new window.Cores.page.Context({
+		path: "/SemanticUI/Introduction"
+	});
+
+
+	function initSession () {
+	
+		authContext.on("changed:authenticated", function (authenticated) {
+	
+			if (authenticated) {
+				pageContext.setViews([
+					"loggedin",
+					"logout"
+				]);
+
+				$('#community-menu').visibility({
+					type   : 'fixed',
+					offset : 0
+				});
+
+			} else {
+				pageContext.setViews([
+					"loggedout",
+					"login"
+				]);
+			}
+		});
+		
+		authContext.on("redirect", function (url) {
+			pageContext.redirectTo(url);
+		});
+
+		window.Cores.auth.adapters.passport.spin(authContext);
+	}
+
 	function initPageManagement () {
-
-		var pageContext = new window.Cores.page.Context();
-
-		var page = window.Cores.page.adapters.page.spin(pageContext);
 
 		var firewidgets = window.Cores.page.adapters.firewidgets.spin(window._.extend(pageContext, {
 			anchors: {
@@ -31,24 +63,63 @@ waitForLibrary(function () {
 						};
 					});
 				}
+			},
+			actions: {
+				"login": function (context) {
+					return window.Promise.try(function () {
+						return authContext.login('0', 'github');
+					});
+				},
+				"logout": function (context) {
+					return window.Promise.try(function () {
+						return authContext.logout('0', 'github');
+					});
+				}
 			}
 		}));
+		
+		
+		var mainMenuPinned = null;
 
 		pageContext.on("changed:path", function (path) {
 			// TODO: Optionally remember scoll positions of pages and re-apply on nav.
-			var navElm = $('.placeholder[data-component-id="navbar"]');
-			var navY = navElm.offset().top;
-			var docY = $(document).scrollTop();
-			if (docY > navY) {
-				$(document).scrollTop(navY + 1);
+			var menuHeight = $(".main.menu").height();
+			var pageContentElm = $("#page-content");
+			var pageContentY = pageContentElm.offset().top;
+			if (
+				mainMenuPinned ||
+				/\/Community\//.test(path)
+			) {
+				$(document).scrollTop(pageContentY - menuHeight * 2);
 			}
+			$('.main.menu .item').removeClass("active");
+			$('.main.menu .item[href="' + path + '"]').addClass("active");
 		});
-	}
 
+		var onScroll = window._.debounce(function () {
+			var isPinned = $(".main.menu").hasClass("fixed");
+			if (isPinned !== mainMenuPinned) {
+				mainMenuPinned = isPinned;
+				if (mainMenuPinned) {
+					$("body").addClass("main-menu-pinned");
+				} else {
+					$("body").removeClass("main-menu-pinned");
+				}
+			}
+		}, 100);
+		$(document).on('scroll', onScroll);
+		onScroll();
+
+		window.Cores.page.adapters.page.spin(pageContext);
+	}
 
 	function initComponents () {
 
 		console.log("init components");
+
+
+//console.log("window.Library", window.Library);
+
 
 /*		
 		window.Cores.load.adapters.pinf.load(
@@ -85,6 +156,7 @@ waitForLibrary(function () {
 */
 	}
 
+	initSession();
 	initPageManagement();
 	initComponents();
 

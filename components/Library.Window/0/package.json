@@ -1,5 +1,5 @@
 {
-  "name": "Library",
+  "name": "Library.Window",
   "version": "0.0.0",
   "private": true,
   "dependencies": {

@@ -1,2 +1,2 @@
 
-require("../../components/Polyfills/0");
+require("../../components/Polyfills.Window/0");

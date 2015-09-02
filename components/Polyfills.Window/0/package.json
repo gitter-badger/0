@@ -1,8 +1,9 @@
 {
-  "name": "Polyfills",
+  "name": "Polyfills.Window",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "bluebird": "^2.9.34",
     "es6-module-loader": "^0.17.6",
     "es6-promise": "^3.0.2",
     "html5-history-api": "^4.2.2",

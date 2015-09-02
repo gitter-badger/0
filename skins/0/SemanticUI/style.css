@@ -1,3 +1,4 @@
+
 body {
     background-color: #FFFFFF;
 }
@@ -7,7 +8,7 @@ body {
 }
 
 .main.menu {
-    margin-top: 4em;
+    margin-top: 0px;
     border-radius: 0;
     border: none;
     box-shadow: none;
@@ -39,14 +40,19 @@ body {
     left: 800px;
 }
 
-.borderless.main.menu {
-    margin-top: 0px;
-}
-
 .borderless.main.menu .item {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+#community-menu {
+    margin-top: 0px;
+}
+#community-menu .item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 
 .main.text.container {
     margin-bottom: 20px;
@@ -105,4 +111,12 @@ body {
     padding-bottom: 50px;
     max-width: 90% !important;
     min-height: 500px;
+}
+
+.main-menu-pinned {
+    padding-top: 100px;
+}
+
+.hidden {
+	display: none !important;
 }

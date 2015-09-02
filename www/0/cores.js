@@ -5,5 +5,6 @@ window.Cores = {
     load: require("../../cores/load/0-load.api"),
     layout: require("../../cores/layout/0-layout.api"),
     component: require("../../cores/component/0-component.api"),
-    template: require("../../cores/template/0-template.api")
+    template: require("../../cores/template/0-template.api"),
+    auth: require("../../cores/auth/0-window.api")
 };
