@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "eventemitter2": "^0.4.14",
+    "fs-extra": "^0.24.0",
     "lodash": "^3.10.1",
     "node-forge": "^0.6.34"
   }

@@ -1,0 +1,10 @@
+{
+    "@": {
+        "$": "./cores/config/for/pinf.genesis.config/0-server.impl.ccjson"
+    },
+    "@extends": {
+        "$0": {
+            "file": "./declarations/0/server.ccjson"
+        }
+    }
+}

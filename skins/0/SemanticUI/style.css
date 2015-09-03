@@ -106,7 +106,7 @@ body {
 }
 
 .ui.text.container.page {
-    font-size: 0.8em;
+    font-size: 1em;
     padding-top: 30px;
     padding-bottom: 50px;
     max-width: 90% !important;

@@ -1,0 +1,2 @@
+
+exports.Promise = require("bluebird");

@@ -39,7 +39,7 @@ function init {
 
 	# TODO: Only install declared and used dependencies
 
-	pushd "$__BO_DIR__/../components/Library.Window/0" > /dev/null
+	pushd "$__BO_DIR__/../components/Library/0" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
 			pushd "node_modules/node-forge" > /dev/null
@@ -68,6 +68,18 @@ function init {
 	popd > /dev/null
 
 	pushd "$__BO_DIR__/../cores/skin/for/semantic-ui" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
+	pushd "$__BO_DIR__/../cores/data/for/knexjs" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
+	pushd "$__BO_DIR__/../cores/data/for/nedb" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
        	fi

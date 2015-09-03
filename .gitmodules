@@ -28,9 +28,6 @@ url=git://github.com/LogicCores/0-loop.git
 [submodule "cores/skin"]
 	path = cores/skin
 url=git://github.com/LogicCores/0-skin.git
-[submodule "lib/cjson"]
-	path = lib/cjson
-url=git://github.com/LogicCores/cjson.git
 [submodule "lib/bash.origin"]
 	path = lib/bash.origin
 url=git://github.com/bash-origin/bash.origin.git
@@ -97,3 +94,6 @@ url=git://github.com/bash-origin/bash.origin.git
 [submodule "data/0/ZeroSystemBook"]
 	path = data/0/ZeroSystemBook
 	url = git@github.com:LogicCores/ZeroSystemBook.git
+[submodule "lib/ccjson"]
+	path = lib/ccjson
+	url = git://github.com/LogicCores/ccjson.git
