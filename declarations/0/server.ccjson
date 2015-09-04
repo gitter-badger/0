@@ -1,0 +1,19 @@
+{
+    "@": {
+        "data.nedb": {
+            "$": "../../cores/data/for/nedb/0-server.impl.ccjson"
+        },
+        "responder.express": {
+            "$": "../../cores/responder/for/express/0-server.impl.ccjson"
+        }
+    },
+    "@data.nedb": {
+        "$0.db.mongo.file": {
+            "filename": "{{__DIRNAME__}}/../../cache/0/datastores/nedb/"
+        }
+    },
+    "@responder.express": {
+        "$0.server": {
+        }
+    }
+}

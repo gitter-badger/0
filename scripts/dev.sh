@@ -19,6 +19,11 @@ function init {
 #        	nvm install 0.12
 			nvm use 0.12
 			export PORT=8090
+
+			BO_realpath "_PROFILE_PATH" "$__BO_DIR__/../../$(basename $__BO_DIR__/..).profile.ccjson"
+			export PROFILE_CONFIG_PATH="_PROFILE_PATH"
+			export ENVIRONMENT_NAME="127.0.0.1:$PORT"
+
 			node .
 		popd > /dev/null
 

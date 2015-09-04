@@ -1,6 +1,8 @@
 
 Zero System is designed to be cloned and modified and again cloned and modified. Every clone is capable of exporting assets that may be used by other Zero System clones and Web Applications in general. Types of modifications and exported assets typically fall into categories and we have established some categories to make working with the Zero System community of code and services easier.
 
+Most important to keep in mind is that Zero System is designed to be compatible with the wider Open Source Community and Open Standards and specifically intended to bridge the gap between existing technology and the declarative composition future by making it work **today**.
+
 
 ## Community Leader Clones
 
@@ -23,7 +25,7 @@ You can become a *Community Ambasador* if you are leading a community in some wa
 
 ## Community Adapter Clones
 
-These are clones of Zero System that add functionality to Zero System by providing technological adapters to other projects and services. These clones **continuously choose to stay compatible** with Zero System to provide a rock solid foundation for the entire Zero System community. Anyone can write and publish a community adapter clone simply by cloning Zero System and implementing the adapter code that will allow for declarative control of the external aspect.
+These are clones of Zero System that add functionality to Zero System by providing technological adapters to other projects and services. These clones **continuously choose to stay compatible** with Zero System to provide a rock solid foundation for the entire Zero System community (and derivatives thereof). Anyone can write and publish a community adapter clone simply by cloning Zero System and implementing the adapter code that will allow for declarative control of the new aspect/feature/service.
 
 ### Deployment
 
@@ -37,5 +39,7 @@ Template clones leverage Zero System to provide pre-built application templates 
 
 ## Component Clones
 
-Component clones leverage Zero System to provide arbitrary protable components for consumption in arbitrary systems and applications.
+Component clones leverage Zero System to provide arbitrary protable components for consumption in arbitrary systems, applications and templates.
+
+
 
