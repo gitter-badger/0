@@ -3,8 +3,8 @@
         "data.nedb": {
             "$": "../../cores/data/for/nedb/0-server.impl.ccjson"
         },
-        "responder.express": {
-            "$": "../../cores/responder/for/express/0-server.impl.ccjson"
+        "route.express": {
+            "$": "../../cores/route/for/express/0-server.impl.ccjson"
         }
     },
     "@data.nedb": {
@@ -12,8 +12,16 @@
             "filename": "{{__DIRNAME__}}/../../cache/0/datastores/nedb/"
         }
     },
-    "@responder.express": {
-        "$0.server": {
+    "@route.express": {
+        "$0.routes.export.babel": {
+        },
+        "$0.routes.export.browserify": {
+        },
+        "$0.routes.transform.marked": {
+        },
+        "$0.routes.auth.passport": {
+        },
+        "$0.routes.proxy.smi.cache.org.travis-ci": {
         }
     }
 }
