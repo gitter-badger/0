@@ -21,7 +21,7 @@ function init {
 
 
 	function Cloud9 {
-		BO_log "$VERBOSE" "HEADER" "Running with Cloud9"
+		BO_format "$VERBOSE" "HEADER" "Running with Cloud9"
 
 		# TODO: Check for declared version and if version changes re-install.
 
@@ -47,7 +47,7 @@ function init {
 			node server.js --packed --port 8181 -w "$WORKSPACE_DIR"
 		popd > /dev/null
 
-		BO_log "$VERBOSE" "FOOTER"
+		BO_format "$VERBOSE" "FOOTER"
 	}
 
 

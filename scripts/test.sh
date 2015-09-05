@@ -12,12 +12,12 @@ function init {
 
 
 	function Test {
-		BO_log "$VERBOSE" "HEADER" "Testing ..."
+		BO_format "$VERBOSE" "HEADER" "Testing ..."
 
 echo "Running ..."
 
 
-		BO_log "$VERBOSE" "FOOTER"
+		BO_format "$VERBOSE" "FOOTER"
 	}
 
 

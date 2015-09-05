@@ -31,7 +31,7 @@ function init {
 	BO_deriveSelfDir ___TMP___ "$BO_SELF_BASH_SOURCE"
 	local __BO_DIR__="$___TMP___"
 
-	BO_log "$VERBOSE" "HEADER" "Installing 0 ..."
+	BO_format "$VERBOSE" "HEADER" "Installing 0 ..."
 
 #	BO_ensure_nvm
 #	nvm install 0.12
@@ -177,6 +177,6 @@ function init {
 	"$__BO_DIR__/../lib/pio.profile/bin/install-pre-commit-hook" \
 		"$__BO_DIR__/../cores/profile/for/pio.profile/pre-commit.sh"
 
-	BO_log "$VERBOSE" "FOOTER"
+	BO_format "$VERBOSE" "FOOTER"
 }
 init $@

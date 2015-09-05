@@ -12,7 +12,7 @@ function init {
 
 
 	function StartResponder {
-		BO_log "$VERBOSE" "HEADER" "Starting cores/responder"
+		BO_format "$VERBOSE" "HEADER" "Starting cores/responder"
 
 		pushd "$__BO_DIR__/.." > /dev/null
 			BO_ensure_nvm
@@ -26,7 +26,7 @@ function init {
 			node .
 		popd > /dev/null
 
-		BO_log "$VERBOSE" "FOOTER"
+		BO_format "$VERBOSE" "FOOTER"
 	}
 
 
