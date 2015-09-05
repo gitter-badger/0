@@ -30,7 +30,7 @@ Zero System uses [Developer Companion](https://github.com/devcomp/0.DeveloperCom
 	npm run deploy      # Will deploy latest commit
 
 
-## Deployment Setup
+# Deployment Setup
 
 We recommend you setup the following stack as a foundation for your project. These services have been picked because they are free for open source / light use and have paid upgrade options when your system grows or is private.
 
@@ -48,9 +48,17 @@ Requirements (Zero System receives **no** *affiliate revenue* as a result of sug
   * TravisCI *(Build Provider)*
   * Github *(Code Repository)*
 
+
+## Configuration
+
+  * Configure deployment profiles in `/data/0/Deployments/*/profile.ccjson`
+  * To update an encrypted variable use `[ENCRYPT:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:<PlainTextValueToBeEncrypted>]` and commit the file. It will be encrypted *pre-commit* and you will then need to stage and commit the encrypted variable. You can also run `npm run encrypt` at any time.
+
+
 ### Heroku
 
 *TODO: Complete setup instructions*
 
     git push heroku master
+
 

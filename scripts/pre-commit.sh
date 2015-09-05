@@ -13,23 +13,14 @@ function init {
     BO_sourcePrototype "$__BO_DIR__/activate.sh"
 
 
-	function Test {
-		BO_format "$VERBOSE" "HEADER" "Testing ..."
+	function PreCommit {
+		BO_format "$VERBOSE" "HEADER" "Running pre-commit ..."
 
-echo "Running ..."
-
+        "$__BO_DIR__/encrypt.sh"
 
 		BO_format "$VERBOSE" "FOOTER"
 	}
 
-
-	# TODO: Do all startup init here using 'PIO_PROFILE_SECRET' and issue
-	#       temporary access keys for runtime
-
-
-	# This variable must not be used from now on
-	export PIO_PROFILE_SECRET=""
-
-	Test $@
+	PreCommit $@
 }
 init $@

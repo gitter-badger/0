@@ -10,6 +10,7 @@
 		"test": "scripts/test.sh",
 		"edit": "scripts/edit.sh",
 		"dev": "scripts/dev.sh",
+		"encrypt": "scripts/encrypt.sh",
 		"start": "node server.js"
 	}
 }

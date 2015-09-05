@@ -10,6 +10,8 @@ function init {
 	BO_deriveSelfDir ___TMP___ "$BO_SELF_BASH_SOURCE"
 	local __BO_DIR__="$___TMP___"
 
+    BO_sourcePrototype "$__BO_DIR__/activate.sh"
+
 
 	function StartResponder {
 		BO_format "$VERBOSE" "HEADER" "Starting cores/responder"
@@ -20,7 +22,6 @@ function init {
 			nvm use 0.12
 			export PORT=8090
 
-			export PROFILE_CONFIG_PATH="$(dirname $(dirname $__BO_DIR__))/$(basename $(dirname $__BO_DIR__)).profile.json"
 			export ENVIRONMENT_NAME="127.0.0.1:$PORT"
 
 			node .
@@ -29,6 +30,13 @@ function init {
 		BO_format "$VERBOSE" "FOOTER"
 	}
 
+
+	# TODO: Do all startup init here using 'PIO_PROFILE_SECRET' and issue
+	#       temporary access keys for runtime
+
+
+	# This variable must not be used from now on
+	export PIO_PROFILE_SECRET=""
 
 	StartResponder $@
 

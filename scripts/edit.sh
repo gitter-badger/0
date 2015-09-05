@@ -10,6 +10,8 @@ function init {
 	BO_deriveSelfDir ___TMP___ "$BO_SELF_BASH_SOURCE"
 	local __BO_DIR__="$___TMP___"
 
+    BO_sourcePrototype "$__BO_DIR__/activate.sh"
+
 
 	WORKSPACE_DIR="$__BO_DIR__/.."
 
@@ -50,6 +52,13 @@ function init {
 		BO_format "$VERBOSE" "FOOTER"
 	}
 
+
+	# TODO: Do all startup init here using 'PIO_PROFILE_SECRET' and issue
+	#       temporary access keys for runtime
+
+
+	# This variable must not be used from now on
+	export PIO_PROFILE_SECRET=""
 
 	Cloud9 $@
 }

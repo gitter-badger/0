@@ -1,0 +1,27 @@
+{
+	"/cores/responder/for/express": {
+		"previewKey": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:4fe84e834bac552d8ed5f14663f2e5b1:b0d3972753462f4d04b891399f9345367610b54a2abe1510285a7e3f918462d8002f39aca1835864a462e1ac3c7d71c3]"
+	},
+	"/cores/auth/for/passport": {
+		"session": {
+		    "secret": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:a283ea8d3a586c28659e96c032c50e49:8c6bed1493a02071a2ac8edd1fb3accbad5ee6c4ad74319591f2aa9d3a660e89abde7ec23e84c0696e6c68bbd5e1bb4d]",
+		    "name": "zerosystem~0",
+		    "cookie": {
+		    	"maxAge": 31536000000
+		    },
+		    "store": {
+			    "secret": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:20e346a3af3a0df4c815c58c30a89d14:28497aed26d41f961d977d6318312521442f3bd4224211db0288f92d6406f58cf4d1bf104080f0d9d19a6bf80afb4419]",
+			    "ttl": 31536000000
+		    }
+		},
+		"passport": {
+		    "github": {
+		        "configUrl": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:5787b4550d055d67302a3bd23e77aac4:1a323e42ed71246ca709315381ace5ea13bcf8b0bc130bd4a47483d6a71c91cc621e813e45e82b5ce578338fc694028b8a44d02d1c425aafd5f68c2240c99b4c482af51051bc3c6f9076a504af03fd4e]",
+		        "clientID": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:ab9edfdf6799c0cf9a963dcd69d607fb:05efa6c23bb172825e51c05392aa1b3e02afd909967dcf1bb1bd825eb2591c2b]",
+		        "clientSecret": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:cc22ac2ec166c3faf399bf5b7a80a217:2fa304b3237cae7011a95e8980c4d6513339e7303e7552bdd1bbc23bc9115c2895754d135190b3914d3118bec9ebc8c2]",
+		        "callbackURL": "http://zerosystem.io/cores/auth/for/passport/0/callback/github",
+		        "scope": ""
+		    }
+		}
+	}
+}
