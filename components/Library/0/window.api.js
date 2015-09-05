@@ -6,7 +6,7 @@ window.EventEmitter = require("eventemitter2").EventEmitter2;
 
 require("../../../cores/skin/for/semantic-ui/node_modules/semantic-ui-css/semantic.js");
 
-;({"APPEND_AS_GLOBAL":"components/Library.Window/0/node_modules/node-forge/js/forge.min.js"});
+;({"APPEND_AS_GLOBAL":"components/Library/0/node_modules/node-forge/js/forge.min.js"});
 
 
 var api = {};
