@@ -177,7 +177,6 @@ function init {
 	"$__BO_DIR__/../lib/pio.profile/bin/install-pre-commit-hook" \
 		"$__BO_DIR__/../cores/profile/for/pio.profile/pre-commit.sh"
 
-
 	BO_log "$VERBOSE" "FOOTER"
 }
 init $@
