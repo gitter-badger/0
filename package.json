@@ -2,6 +2,9 @@
 	"name": "0",
 	"version": "0.0.0",
 	"main": "server.js",
+	"engines": {
+		"iojs": "3.3.x"
+	},
 	"scripts": {
 		"install": "scripts/install.sh",
 		"test": "scripts/test.sh",
