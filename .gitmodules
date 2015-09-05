@@ -21,7 +21,7 @@ url=git://github.com/LogicCores/0-route.git
 	url = git://github.com/LogicCores/0-data.git
 [submodule "cores/process"]
 	path = cores/process
-	url = git@github.com:LogicCores/0-process.git
+url=git://github.com/LogicCores/0-process.git
 [submodule "cores/loop"]
 	path = cores/loop
 url=git://github.com/LogicCores/0-loop.git
