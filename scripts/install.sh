@@ -55,6 +55,12 @@ function init {
        	fi
 	popd > /dev/null
 
+	pushd "$__BO_DIR__/../cores/auth/for/passport" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
 	pushd "$__BO_DIR__/../cores/responder/for/express" > /dev/null
         if [ ! -e "node_modules" ]; then
         	npm install
