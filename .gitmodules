@@ -97,6 +97,3 @@ url=git://github.com/LogicCores/ZeroSystemBook.git
 [submodule "lib/ccjson"]
 	path = lib/ccjson
 	url = git://github.com/LogicCores/ccjson.git
-[submodule "lib/cjson"]
-	path = lib/cjson
-	url = git@github.com:LogicCores/ccjson.git
