@@ -1,7 +1,8 @@
 {
     "@": {
         "$": [
-            "./declarations/0/server.ccjson"
+            "./declarations/0/server.ccjson",
+            "{{ENV.PROFILE_CONFIG_PATH}}"
         ],
         "responder.server": {
             "$": "./cores/responder/for/express/0-server.impl.ccjson"

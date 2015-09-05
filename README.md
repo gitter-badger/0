@@ -20,12 +20,6 @@ Setup
   * NodeJS
   * OSX (only for now)
 
-### Optional
-
-  * Heroku
-  * TravisCI
-  * Github
-
 
 Evaluate
 --------
@@ -35,21 +29,25 @@ Evaluate
 	npm install
 
 	# Development
-	npm run edit
-	npm run dev
+	npm run edit        # Will launch an editor
+	npm run dev         # Will run system in development mode
+	npm test            # Will test system
 
 	# Production
-	npm start
+	npm start           # Will run system in production mode
+
+	# Deploy
+	npm run deploy      # Will deploy latest commit
 
 
 Use as Template
 ---------------
 
-  1. Fork [github.com/LogicCores/0](https://github.com/LogicCores/0.git)
-  2. Develop your application *in parallel* to the `0` namespace
+  1. Fork [github.com/LogicCores/0](https://github.com/LogicCores/0.git) and rename it to something `0.*`
+  2. Develop your application in your chosen `0.*` namespace *in parallel* to the `0` namespace
   3. Use the `0` application as a reference and to contribute back
-  4. Exclude the `0` namespace when distributing your application
-  5. Let us know how you fare; good or bad so we can make it better
+  4. Exclude the `0` namespace when distributing your application (will happen by default)
+  5. Let us know how you fare; good or bad so we can improve the process
 
 
 FAQ

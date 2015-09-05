@@ -43,6 +43,10 @@ function init {
         if [ ! -e "node_modules" ]; then
         	npm install
 			pushd "node_modules/node-forge" > /dev/null
+
+				# Fix path to 'r.js' when deploying to heroku using iojs
+				export PATH="$__BO_DIR__/../components/Library/0/node_modules/node-forge/node_modules/.bin:$PATH"
+
 	        	npm install
 	        	npm run minify
 			popd > /dev/null
