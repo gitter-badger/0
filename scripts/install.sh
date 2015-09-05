@@ -151,6 +151,12 @@ function init {
        	fi
 	popd > /dev/null
 
+	pushd "$__BO_DIR__/../lib/ccjson" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
 	BO_log "$VERBOSE" "FOOTER"
 }
 init $@
