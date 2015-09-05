@@ -51,7 +51,7 @@ url=git://github.com/bash-origin/bash.origin.git
 	url = git://github.com/LogicCores/0-load.git
 [submodule "cores/watch"]
 	path = cores/watch
-	url = git@github.com:LogicCores/0-watch.git
+url=git://github.com/LogicCores/0-watch.git
 [submodule "cores/edit"]
 	path = cores/edit
 	url = git://github.com/LogicCores/0-edit.git
@@ -69,31 +69,34 @@ url=git://github.com/bash-origin/bash.origin.git
 	url = git://github.com/LogicCores/0-layout.git
 [submodule "cores/namespace"]
 	path = cores/namespace
-	url = git@github.com:LogicCores/0-namespace.git
+url=git://github.com/LogicCores/0-namespace.git
 [submodule "cores/transform"]
 	path = cores/transform
 	url = git://github.com/LogicCores/0-transform.git
 [submodule "cores/config"]
 	path = cores/config
-	url = git@github.com:LogicCores/0-config.git
+url=git://github.com/LogicCores/0-config.git
 [submodule "cores/render"]
 	path = cores/render
-	url = git@github.com:LogicCores/0-render.git
+url=git://github.com/LogicCores/0-render.git
 [submodule "cores/email"]
 	path = cores/email
-	url = git@github.com:LogicCores/0-email.git
+url=git://github.com/LogicCores/0-email.git
 [submodule "cores/sms"]
 	path = cores/sms
 	url = git://github.com/LogicCores/0-sms.git
 [submodule "cores/console"]
 	path = cores/console
-	url = git@github.com:LogicCores/0-console.git
+url=git://github.com/LogicCores/0-console.git
 [submodule "cores/auth"]
 	path = cores/auth
-	url = git@github.com:LogicCores/0-auth.git
+url=git://github.com/LogicCores/0-auth.git
 [submodule "data/0/ZeroSystemBook"]
 	path = data/0/ZeroSystemBook
-	url = git@github.com:LogicCores/ZeroSystemBook.git
+url=git://github.com/LogicCores/ZeroSystemBook.git
 [submodule "lib/ccjson"]
 	path = lib/ccjson
 	url = git://github.com/LogicCores/ccjson.git
+[submodule "lib/cjson"]
+	path = lib/cjson
+	url = git@github.com:LogicCores/ccjson.git
