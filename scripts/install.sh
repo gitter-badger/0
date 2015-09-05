@@ -167,6 +167,17 @@ function init {
        	fi
 	popd > /dev/null
 
+	pushd "$__BO_DIR__/../lib/pio.profile" > /dev/null
+        if [ ! -e "node_modules" ]; then
+        	npm install
+       	fi
+	popd > /dev/null
+
+
+	"$__BO_DIR__/../lib/pio.profile/bin/install-pre-commit-hook" /
+		"$__BO_DIR__/../cores/profile/for/pio.profile/pre-commit.sh"
+
+
 	BO_log "$VERBOSE" "FOOTER"
 }
 init $@
