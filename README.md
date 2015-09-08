@@ -3,7 +3,7 @@
 Declarative Core-Composed System Orchestration Template
 =======================================================
 
-An opinionated minimal primitive-component-based development and runtime system template for declarative front- and back-ends that deploys and automatically tests itself.
+An opinionated [ccjson](https://github.com/LogicCores/ccjson) powered minimal primitive-component-based development, and runtime system template for declarative front- and back-ends that deploys and automatically tests itself.
 
 > Create stable static assets for deployment from your dynamic source logic.
 
@@ -101,4 +101,5 @@ We do not **use** *PINF.Genesis* in this template but are *implementing one mode
 
 We already use the *PINF.Genesis.ccjson* file to get ready for when *PINF.Genesis* is released as this project will act as one reference implementation of a *PINF.Genesis* based system at that time.
 
+`ccjson` is the config orchestration solution for Zero System and can be found here: [github.com/LogicCores/ccjson](https://github.com/LogicCores/ccjson)
 
