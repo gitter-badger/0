@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"main": "server.js",
 	"engines": {
-		"iojs": "3.3.x"
+		"node": "^4.0.0"
 	},
 	"scripts": {
 		"install": "scripts/install.sh",

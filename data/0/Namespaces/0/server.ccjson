@@ -46,23 +46,29 @@
     },
     "@route.express": {
         "$0.routes": {
+            "#": "get",
             "routes": {
                 "namespace": "0"
             }
         },
         "$0.routes.export.babel": {
+            "#": "register"
         },
         "$0.routes.export.browserify": {
+            "#": "register"
         },
         "$0.routes.transform.marked": {
+            "#": "register"
         },
         "$0.routes.auth.passport": {
+            "#": "register",
             "namespace": "0",
             "match": "^/cores/auth/for/passport/0(/.*)",
             "$0.auth.community.app()->impl": {
             }
         },
         "$0.routes.proxy.smi.cache.org.travis-ci": {
+            "#": "register"
         }
     }
 }
