@@ -47,7 +47,12 @@ function init {
 	        if [ ! -e "node_modules" ]; then
 	        	npm install
 				pushd "node_modules/node-forge" > /dev/null
-					npm install --dev
+					# This will install dev dependencies for the whole tree.
+					# We just need the modules
+					#npm install --dev
+				    npm install almond
+				    npm install jscs
+				    npm install requirejs
 		        	npm run minify
 				popd > /dev/null
 	       	fi
