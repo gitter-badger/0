@@ -49,8 +49,10 @@ function init {
 				pushd "node_modules/node-forge" > /dev/null
 	
 					# Fix path to 'r.js' when deploying to heroku using iojs
-					export PATH="$__BO_DIR__/../components/Library/0/node_modules/node-forge/node_modules/.bin:$PATH"
+#					export PATH="$__BO_DIR__/../components/Library/0/node_modules/node-forge/node_modules/.bin:$PATH"
 echo "PATH: $PATH"
+
+npm install
 
 ls -al "$__BO_DIR__/../components/Library/0"
 ls -al "$__BO_DIR__/../components/Library/0/node_modules"
@@ -60,7 +62,6 @@ ls -al "$__BO_DIR__/../components/Library/0/node_modules/node-forge/node_modules
 
 which r.js
 r.js -h
-		        	npm install
 		        	npm run minify
 				popd > /dev/null
 	       	fi
