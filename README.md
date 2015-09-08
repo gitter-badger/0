@@ -3,7 +3,7 @@
 Declarative Core-Composed System Orchestration Template
 =======================================================
 
-An opinionated [ccjson](https://github.com/LogicCores/ccjson) powered minimal primitive-component-based development, and runtime system template for declarative front- and back-ends that deploys and automatically tests itself.
+An opinionated [ccjson](https://github.com/LogicCores/ccjson) based minimal primitive-component-based development, and runtime system template for declarative front- and back-ends that deploys and automatically tests itself.
 
 > Create stable static assets for deployment from your dynamic source logic.
 
