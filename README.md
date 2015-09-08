@@ -103,3 +103,8 @@ We already use the *PINF.Genesis.ccjson* file to get ready for when *PINF.Genesi
 
 `ccjson` is the config orchestration solution for Zero System and can be found here: [github.com/LogicCores/ccjson](https://github.com/LogicCores/ccjson)
 
+
+Provenance
+==========
+
+Original source logic [UNLICENSED](http://unlicense.org/) by [Christoph Dorn](http://christophdorn.com)
