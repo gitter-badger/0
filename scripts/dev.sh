@@ -20,10 +20,6 @@ function init {
 			BO_ensure_nvm
 #        	nvm install 0.12
 			nvm use 0.12
-			export PORT=8090
-
-			export ENVIRONMENT_NAME="127.0.0.1:$PORT"
-
 			node .
 		popd > /dev/null
 
@@ -36,7 +32,7 @@ function init {
 
 
 	# This variable must not be used from now on
-	export PIO_PROFILE_SECRET=""
+#	export PIO_PROFILE_SECRET=""
 
 	StartResponder $@
 

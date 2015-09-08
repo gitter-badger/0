@@ -1,8 +1,8 @@
 {
     "@": {
         "$": [
-            "./declarations/0/server.ccjson",
-            "{{ENV.PROFILE_CONFIG_PATH}}"
+            "./data/0/Namespaces/0/server.ccjson",
+            "./data/0/Deployments/{{ENV.ENVIRONMENT_NAME}}/profile.ccjson"
         ],
         "responder.server": {
             "$": "./cores/responder/for/express/0-server.impl.ccjson"
@@ -10,10 +10,8 @@
     },
     "@responder.server": {
         "$server": {
-            "routes": {
-                "/": "{{$0.routes}}",
-                "/admin": "{{$0.admin.routes}}",
-                "/app": "{{$0.app.routes}}"
+            "$0.routes.routes()->routes/system": {
+                "match": "^(/.*)"
             }
         }
     }

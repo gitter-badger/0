@@ -8,6 +8,7 @@
 
 Zero System uses [Developer Companion](https://github.com/devcomp/0.DeveloperCompanion) to install itself on your desktop from where you can use it to deploy your modified clones. If you choose this path you can **ignore everything below**. Developer Companion is a Zero System Clone and 100% open source just like Zero System.
 
+
 # The Manual Way
 
 ## Local Install
@@ -28,6 +29,8 @@ Zero System uses [Developer Companion](https://github.com/devcomp/0.DeveloperCom
 
 	# Deploy
 	npm run deploy      # Will deploy latest commit
+
+To clone Zero System and use it as a template for your application see [github.com/LogicCores/0](https://github.com/LogicCores/0).
 
 
 # Deployment Setup

@@ -13,5 +13,12 @@ exports.forPoly = function (POLYFILLS) {
     exports.path = require("path");
     exports.fs = require("fs-extra");
 
+    exports.traverse = require("traverse");
+    exports.CJSON = {
+        stringify: require("canonical-json")
+    };
+
+    exports.ccjson = require("../../../lib/ccjson");
+
     return exports;
 }

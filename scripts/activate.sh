@@ -19,5 +19,8 @@ function init {
     	#       and before any non-tooling related runtime processes start!
 	fi
 
+	export PORT=8090
+	export ENVIRONMENT_NAME="127.0.0.1:$PORT"
+
 }
 init $@

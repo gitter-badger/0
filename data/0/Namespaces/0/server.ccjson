@@ -1,0 +1,68 @@
+{
+    "@": {
+        "profile.pio": {
+            "$": "../../../../cores/profile/for/pio.profile/0-server.impl.ccjson"
+        },
+        "data.nedb": {
+            "$": "../../../../cores/data/for/nedb/0-server.impl.ccjson"
+        },
+        "route.express": {
+            "$": "../../../../cores/route/for/express/0-server.impl.ccjson"
+        },
+        "auth.passport": {
+            "$": "../../../../cores/auth/for/passport/0-server.impl.ccjson"
+        }
+    },    
+    "@profile.pio": {
+        "$0.profiles.pio": {
+            "env": {
+                "PIO_PROFILE_KEY": "{{ENV.PIO_PROFILE_KEY}}",
+                "PIO_PROFILE_SECRET": "{{ENV.PIO_PROFILE_SECRET}}"
+            }
+        }
+    },
+    "@data.nedb": {
+        "$0.db.mongo.file": {
+            "filename": "{{__DIRNAME__}}/../../../../cache/0/datastores/nedb/"
+        }
+    },
+    "@auth.passport": {
+        "$0.auth.community": {
+    		"session": {
+    		    "name": "zerosystem~0",
+    		    "cookie": {
+    		    	"maxAge": 31536000000
+    		    },
+    		    "store": {
+    			    "ttl": 31536000000
+    		    }
+    		},
+    		"passport": {
+    		    "github": {
+    		        "scope": ""
+    		    }
+    		}
+        }
+    },
+    "@route.express": {
+        "$0.routes": {
+            "routes": {
+                "namespace": "0"
+            }
+        },
+        "$0.routes.export.babel": {
+        },
+        "$0.routes.export.browserify": {
+        },
+        "$0.routes.transform.marked": {
+        },
+        "$0.routes.auth.passport": {
+            "namespace": "0",
+            "match": "^/cores/auth/for/passport/0(/.*)",
+            "$0.auth.community.app()->impl": {
+            }
+        },
+        "$0.routes.proxy.smi.cache.org.travis-ci": {
+        }
+    }
+}

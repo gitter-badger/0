@@ -1,27 +1,33 @@
 {
-	"/cores/responder/for/express": {
-		"previewKey": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:5f459046ae370ce6f239fe7da9911862:9e2c88eec56f91e270e2d4d8294399293c39083c9567a776a5c57ae1377251c2908a2adabc16cfd0cdd1cccc48f95db7]"
-	},
-	"/cores/auth/for/passport": {
-		"session": {
-		    "secret": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:3b6e7dd5579df570effa345fd78caa51:6a37e51f87479d715433dff43f0d07efd0b66cfb85882bf46cdac86f5fb546f1690aebeae6e8441123773eecea410a88]",
-		    "name": "zerosystem~0",
-		    "cookie": {
-		    	"maxAge": 31536000000
-		    },
-		    "store": {
-			    "secret": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:012d55a1f806bbe4b0ccebf72867f5e9:8c8fab82648b0ed5dc1586881518c7b910bbfb5355dab08a44da0c3743ea1089a646c5f78774fbfb96d86c2d246a9334]",
-			    "ttl": 31536000000
-		    }
-		},
-		"passport": {
-		    "github": {
-		        "configUrl": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:e4dfcc5182ac8f45bc7fc77349d0a959:c23cd1dd36ba2afd043f2884f5e2ac3b07fd48268795ac0ceeb3bc66584396b0c96f87b6957e14e53aa5fae6759ad6daa0b5c18df61a60536d3886d2fe9bcec58e73c1f7f69938e913d490cdae4fb84a]",
-		        "clientID": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:6bb58677ce1136c46e848e7ec309063f:f0a1a0775075c20f2abf3772e182ad70f05eac47206b13d131e14e39849dc7a4]",
-		        "clientSecret": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:16a3390c7c8e15d7d15e364db0a5a8ac:2a77219a1396618df3a0af6993fb922f8311cc319fc7e77c072ece36143ca25ad982170e9a20ad2c6b90127b11862ac5]",
-		        "callbackURL": "http://127.0.0.1:8090/cores/auth/for/passport/0/callback/github",
-		        "scope": ""
-		    }
-		}
-	}
+    "@": {
+        "responder.server": {
+        }
+    },
+    "@responder.server": {
+        "$server": {
+            "$0.profiles.pio.decrypt()->.": {
+        		"previewKey": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:5f459046ae370ce6f239fe7da9911862:9e2c88eec56f91e270e2d4d8294399293c39083c9567a776a5c57ae1377251c2908a2adabc16cfd0cdd1cccc48f95db7]"
+            }
+        }
+    },
+    "@auth.passport": {
+        "$0.auth.community": {
+            "$0.profiles.pio.decrypt()->.": {
+        		"session": {
+        		    "secret": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:3b6e7dd5579df570effa345fd78caa51:6a37e51f87479d715433dff43f0d07efd0b66cfb85882bf46cdac86f5fb546f1690aebeae6e8441123773eecea410a88]",
+        		    "store": {
+        			    "secret": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:012d55a1f806bbe4b0ccebf72867f5e9:8c8fab82648b0ed5dc1586881518c7b910bbfb5355dab08a44da0c3743ea1089a646c5f78774fbfb96d86c2d246a9334]"
+        		    }
+        		},
+        		"passport": {
+        		    "github": {
+        		        "configUrl": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:e4dfcc5182ac8f45bc7fc77349d0a959:c23cd1dd36ba2afd043f2884f5e2ac3b07fd48268795ac0ceeb3bc66584396b0c96f87b6957e14e53aa5fae6759ad6daa0b5c18df61a60536d3886d2fe9bcec58e73c1f7f69938e913d490cdae4fb84a]",
+        		        "clientID": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:6bb58677ce1136c46e848e7ec309063f:f0a1a0775075c20f2abf3772e182ad70f05eac47206b13d131e14e39849dc7a4]",
+        		        "clientSecret": "[ENCRYPTED:PIO_PROFILE_KEY+PIO_PROFILE_SECRET:16a3390c7c8e15d7d15e364db0a5a8ac:2a77219a1396618df3a0af6993fb922f8311cc319fc7e77c072ece36143ca25ad982170e9a20ad2c6b90127b11862ac5]",
+        		        "callbackURL": "http://127.0.0.1:8090/cores/auth/for/passport/0/callback/github"
+        		    }
+        		}
+            }
+        }
+    }
 }

@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "canonical-json": "0.0.4",
     "eventemitter2": "^0.4.14",
     "fs-extra": "^0.24.0",
     "lodash": "^3.10.1",
-    "node-forge": "^0.6.34"
+    "node-forge": "^0.6.34",
+    "traverse": "^0.6.6"
   }
 }

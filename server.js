@@ -30,7 +30,10 @@ LIB.Promise.try(function () {
 
     return makeContext("config", {
         env: process.env,
-        path: BOOT_CONFIG_PATH
+        path: BOOT_CONFIG_PATH,
+        boot: [
+            "server"
+        ]
     }).then(function (configContext) {
 
         return configContext.adapters["pinf.genesis.config"].spin(configContext);
