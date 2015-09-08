@@ -45,15 +45,18 @@ function init {
 	
 		pushd "$__BO_DIR__/../components/Library/0" > /dev/null
 	        if [ ! -e "node_modules" ]; then
+pwd	
+
 	        	npm install
+npm list
 				pushd "node_modules/node-forge" > /dev/null
-	
+pwd	
 					# Fix path to 'r.js' when deploying to heroku using iojs
 #					export PATH="$__BO_DIR__/../components/Library/0/node_modules/node-forge/node_modules/.bin:$PATH"
 echo "PATH: $PATH"
 
-npm install
-npm list
+npm install -d
+npm list -d
 
 ls -al "$__BO_DIR__/../components/Library/0"
 ls -al "$__BO_DIR__/../components/Library/0/node_modules"
