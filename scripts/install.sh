@@ -55,7 +55,8 @@ pwd
 #					export PATH="$__BO_DIR__/../components/Library/0/node_modules/node-forge/node_modules/.bin:$PATH"
 echo "PATH: $PATH"
 
-npm install -d
+cat package.json
+npm install --dev -d
 npm list -d
 
 ls -al "$__BO_DIR__/../components/Library/0"
