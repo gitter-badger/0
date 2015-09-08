@@ -36,42 +36,23 @@ function init {
 
 	function Install {
 		BO_format "$VERBOSE" "HEADER" "Installing 0 ..."
-	
+
 	#	BO_ensure_nvm
 	#	nvm install 0.12
 	#	nvm use 0.12
-	
+
 		# TODO: Only install declared and used dependencies
-	
+
 		pushd "$__BO_DIR__/../components/Library/0" > /dev/null
 	        if [ ! -e "node_modules" ]; then
-pwd	
-
 	        	npm install
-npm list
 				pushd "node_modules/node-forge" > /dev/null
-pwd	
-					# Fix path to 'r.js' when deploying to heroku using iojs
-#					export PATH="$__BO_DIR__/../components/Library/0/node_modules/node-forge/node_modules/.bin:$PATH"
-echo "PATH: $PATH"
-
-cat package.json
-npm install --dev -d
-npm list -d
-
-ls -al "$__BO_DIR__/../components/Library/0"
-ls -al "$__BO_DIR__/../components/Library/0/node_modules"
-ls -al "$__BO_DIR__/../components/Library/0/node_modules/node-forge"
-ls -al "$__BO_DIR__/../components/Library/0/node_modules/node-forge/node_modules"
-ls -al "$__BO_DIR__/../components/Library/0/node_modules/node-forge/node_modules/.bin"
-
-which r.js
-r.js -h
+					npm install --dev
 		        	npm run minify
 				popd > /dev/null
 	       	fi
 		popd > /dev/null
-exit 1
+
 		pushd "$__BO_DIR__/../components/Polyfills/0" > /dev/null
 	        if [ ! -e "node_modules" ]; then
 	        	npm install
