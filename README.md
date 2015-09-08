@@ -3,7 +3,7 @@
 Declarative Core-Composed System Orchestration Template
 =======================================================
 
-An opinionated [ccjson](https://github.com/LogicCores/ccjson) based minimal primitive-component-based development, and runtime system template for declarative JavaScript front- and NodeJS back-ends that deploys and automatically tests itself.
+An opinionated [ccjson](https://github.com/LogicCores/ccjson) based minimal primitive-component-based development and runtime system template for declarative JavaScript front- and NodeJS back-ends that deploys and automatically tests itself.
 
 > Create stable static assets for deployment from your dynamic source logic.
 
@@ -57,7 +57,7 @@ Given a hostname such as `test.com` and a project you want to locate at `app.tes
   * External
     * Hostname: `app.test.com`
     * Root Namespace: `com.test.app`
-    * Source Code Project Namespace: `com.test.app` (e.g. Github repository name)
+    * Source Code Project Name: `com.test.app` (e.g. Github repository name)
 
   * Internal
     * Root Namespace: `com.test.app`
