@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 if [ -z "$npm_config_argv" ]; then
 	echo "ERROR: Must run with 'npm install'!"
 	exit 1
@@ -50,13 +50,15 @@ function init {
 	
 					# Fix path to 'r.js' when deploying to heroku using iojs
 					export PATH="$__BO_DIR__/../components/Library/0/node_modules/node-forge/node_modules/.bin:$PATH"
-	
+echo "PATH: $PATH"
+which r.js
+r.js -h
 		        	npm install
 		        	npm run minify
 				popd > /dev/null
 	       	fi
 		popd > /dev/null
-	
+exit 1
 		pushd "$__BO_DIR__/../components/Polyfills/0" > /dev/null
 	        if [ ! -e "node_modules" ]; then
 	        	npm install
