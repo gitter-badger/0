@@ -49,7 +49,7 @@ function init {
 				pushd "node_modules/node-forge" > /dev/null
 					# This will install dev dependencies for the whole dep tree!
 					#npm install --dev
-					# We just need one module to minify forge.
+				    npm install almond
 				    npm install requirejs
 		        	npm run minify
 				popd > /dev/null
