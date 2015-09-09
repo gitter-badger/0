@@ -3,6 +3,8 @@
 Declarative Core-Composed System Orchestration Template
 =======================================================
 
+[![Join the chat at https://gitter.im/LogicCores/0](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/LogicCores/0?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 An opinionated [ccjson](https://github.com/LogicCores/ccjson) based minimal primitive-component-based development and runtime system template for declarative JavaScript front- and NodeJS back-ends that deploys and automatically tests itself.
 
 > Create stable static assets for deployment from your dynamic source logic.
