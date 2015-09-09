@@ -17,7 +17,7 @@ Setup
 
 ### Required
 
-  * NodeJS
+  * [NodeJS 4+](https://nodejs.org/)
   * OSX (only for now)
 
 

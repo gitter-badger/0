@@ -18,8 +18,9 @@ function init {
 
 		pushd "$__BO_DIR__/.." > /dev/null
 			BO_ensure_nvm
-#        	nvm install 0.12
-			nvm use 0.12
+			if ! nvm use 4; then
+	        	nvm install 4
+			fi
 			node .
 		popd > /dev/null
 
